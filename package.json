@@ -1,0 +1,36 @@
+{
+  "name": "api-product",
+  "version": "1.0.0",
+  "description": "",
+  "main": "console.js",
+  "scripts": {
+    "dev": "DEBUG=app:* nodemon index",
+    "start": "NODE_ENV=production node index",
+    "test": "mocha --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.3",
+    "@hapi/joi": "^17.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "mocha": "^9.0.3",
+    "prettier": "^2.3.2",
+    "proxyquire": "^2.1.3",
+    "sinon": "^11.1.2",
+    "supertest": "^6.1.5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
